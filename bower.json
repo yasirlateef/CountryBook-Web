@@ -1,0 +1,10 @@
+{
+  "name": "countrypedia-web",
+  "description": "A simple and small encyclopedia for countries of the world!",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}

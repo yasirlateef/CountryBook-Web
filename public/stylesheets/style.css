@@ -1,0 +1,54 @@
+body{
+	background:url('/images/concrete_seamless.png');
+}
+
+.countries-list li{
+	margin:7px 5px;
+}
+
+.detail{
+	padding-top:25px;
+}
+
+.table{
+	font-size:17px;
+}
+#countryDetail tr td:nth-child(1){
+	font-weight: bold;
+}
+
+#attribName{
+	text-transform: capitalize;
+}
+header{
+	background: url('/images/footer_lodyas.png');
+	padding:20px;
+	color:#aaa;
+	border-bottom: 3px solid #777;
+}
+
+footer{
+	padding-top:15px;
+	margin-top:20px;
+	border-top: 2px solid #777;
+	background: url('/images/footer_lodyas.png');
+	color:#aaa;
+}
+
+#copyright, #credit{
+	line-height: 30px;
+}
+
+#credit .fa, #credit a{
+	color:#ea5a4b;
+}
+
+/* TWBS Classes */
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	border-color:#bbb;
+}
+
+.navbar{
+	border-radius:0;
+}

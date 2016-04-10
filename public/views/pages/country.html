@@ -1,0 +1,87 @@
+<div class="row">
+	<div class="container">
+		<div class="col-sm-4">
+			flag
+		</div>
+		<div class="col-sm-8">
+			<h1>{{ country.name }}</h1>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+		<div class="row">
+			<div class="col-sm-12 detail">
+				<table class="table text-center" id="countryDetail">
+					<tr>
+						<td>Name</td>
+						<td>{{country.name}}</td>
+					</tr>
+					<tr>
+						<td>Capital</td>
+						<td>{{country.capital}}</td>
+					</tr>
+					<tr>
+						<td>Alternate Spellings</td>
+						<td>
+							<p ng-repeat="spell in country.altSpellings">{{spell}}</p>
+						</td>
+					</tr>
+					<tr>
+						<td>Region</td>
+						<td>{{country.region}}</td>
+					</tr>
+					<tr>
+						<td>Subregion</td>
+						<td>{{country.subregion}}</td>
+					</tr>
+					<tr>
+						<td>Population</td>
+						<td>{{country.population | number}}</td>
+					</tr>
+					<tr>
+						<td>Demonym</td>
+						<td>{{country.demonym}}</td>
+					</tr>
+					<tr>
+						<td>Area</td>
+						<td>{{country.area | number}}</td>
+					</tr>
+					<tr>
+						<td>Timezones</td>
+						<td>
+							<ul class="list-unstyled">
+								<li ng-repeat="timezone in country.timezones">{{timezone}}</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>Borders</td>
+						<td>
+							<span ng-repeat="border in country.borders">{{border}}, </span>
+						</td>
+					</tr>
+					<tr>
+						<td>Calling Codes</td>
+						<td>
+							<span ng-repeat="code in country.callingCodes">{{code}}, </span>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Currencies</td>
+						<td>
+							<span ng-repeat="currency in country.currencies">{{currency}}, </span>
+						</td>
+					</tr>
+					<tr>
+						<td>Languages</td>
+						<td>
+							<span ng-repeat="lang in country.languages">{{lang}}, </span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

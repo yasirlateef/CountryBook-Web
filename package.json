@@ -1,0 +1,20 @@
+{
+  "name": "countrypedia",
+  "version": "1.0.0",
+  "description": "A simple encyclopedia for countries of the world",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "countries",
+    "encyclopedia"
+  ],
+  "author": "Yasir Lateef",
+  "license": "MIT",
+  "repository" : "https://github.com/yasir-lateef/CountryPedia-Web.git"
+}
