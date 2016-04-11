@@ -1,67 +1,32 @@
 # CountryPedia-API
-A simple encyclopia for countries of the world. It is a RESTful API that I created using Node.js's Express framework and it is just a starter project. The data about the countries could be found in 'data/countries.json' file. 
+An SPA created using [AngularJS](https://angularjs.org), to demonstrate [CountryPedia-API](https://github.com/yasir-lateef/CountryPedia-API) project. 
 
 ## How to Use :
 
-#### Clone the repo and install depedencies
+#### Clone the API repo, install depedencies and start the API
+
+First and foremost, you'll need the API, so here's how to get the API from its repo and get it working.
 
 ```sh
 $ git clone https://github.com/yasir-lateef/CountryPedia-API.git
 $ cd CountryPedia-API
-$ npm install
+$ npm install && npm start
 ```
+It will start the API, once all the dependencies are successfully installed!
 
-#### API Routes
+#### Clone the SPA repo and install dependencies
 
-##### Countries
+Open another bash/cmd shell and run the following to get the SPA repo working. 
 
-- List of all the countries
 ```sh
-http://localhost:8888/api/countries/all
+$ git clone https://github.com/yasir-lateef/CountryPedia-Web.git
+$ cd CountryPedia-Web
+$ npm install && bower install
+$ npm start
 ```
 
-- Information about a country
-```sh
-http://localhost:8888/api/countries/:countryName
-```
-Replace 'countryName' with the name of the country you want info about. For Example Pakistan, United States etc.
+#### Use the Angular App
 
+Open up your browser and navigate to http://localhost:8080. Walah!
 
-- Information about a country's specific attribute
-```sh
-http://localhost:8888/api/countries/:countryName/:attribName
-```
-Replace 'countryName' and 'attribName' parameters with the country and attribute(lowercase) you want info about. For Example Pakistan, United States etc.
-###### List of Attributes
- - name
- - capital
- - region
- - altSpellings
- - subregion
- - population
- - demonym
- - area
- - timezones
- - borders
- - callingCodes
- - currencies
- - languages
- 
- ##### Regions
- 
- - List of Regions
- ```sh
- http://localhost:8888/api/regions
- ```
- 
- - List of countries in a specified region
- ```sh
- http://localhost:8888/api/regions/:regionName
- ```
- Replace 'regionName' parameter with the name of one of the regions. For Example Africa, Europe etc
- ###### List of Regions
- - Asia
- - Europe
- - Africa
- - Oceania
- - Americas
+Enjoy coding and make something amazing from this code! 
