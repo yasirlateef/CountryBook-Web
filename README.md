@@ -1,4 +1,4 @@
-# CountryPedia-API
+# CountryPedia-Web
 An SPA created using [AngularJS](https://angularjs.org), to demonstrate [CountryPedia-API](https://github.com/yasir-lateef/CountryPedia-API) project. 
 
 ## How to Use :
