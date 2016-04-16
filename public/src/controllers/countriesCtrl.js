@@ -10,11 +10,24 @@ countriesCtrl.controller('countriesController', function($scope, countries){
 	});
 });
 
-countriesCtrl.controller('countriesDetailController', function($rootScope, $scope, $routeParams, countries){
+countriesCtrl.controller('countriesDetailController', function($rootScope, $scope, $routeParams, $http, countries){
 	countries.find($routeParams.countryName, function(country){
 		$scope.country = country;
 		$scope.isArray = Array.isArray;
 		$scope.host = $rootScope.host;
+		$scope.borders = [];
+
+		var borderCountries = country.borders;
+		
+		for(var i=0; i<borderCountries.length; i++){
+			$http({
+				method : 'GET',
+				url : 'http://localhost:8888/api/search/?isocode=' + borderCountries[i],
+				cache : true
+			}).success(function(response){
+				$scope.borders.push(response.name);
+			});
+		}
 	});
 });
 
